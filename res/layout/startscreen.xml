@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--making linear layout and setting background to bgapp-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgapp"
+    tools:context=".StartScreen">
+
+    <!--textview of "Quiz Game Demo"-->
+    <TextView
+        android:id="@+id/tvDemo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="175dp"
+        android:layout_gravity="center"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:textSize="44sp"
+        android:text="Quiz Game Demo"
+        />
+
+    <!--start button-->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:text="START"
+        android:textSize="22sp"
+        android:textColor="#0066ff"
+        android:background="@drawable/bgbutton"/>
+
+    <!--exit button-->
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:text="EXIT"
+        android:textSize="22sp"
+        android:textColor="#0066ff"
+        android:background="@drawable/bgbutton"/>
+</LinearLayout>

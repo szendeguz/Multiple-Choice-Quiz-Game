@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--making linear layout and setting background to bgapp-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgapp"
+    tools:context=".QuizGame">
+
+    <!--making relative layout for the score and health points-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginBottom="40dp">
+
+        <!--score field in the top left corner-->
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:layout_alignParentLeft="true"
+            android:text="Score:"/>
+
+        <!--health points in the top right corner-->
+        <TextView
+            android:id="@+id/tvLife"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="Health: 3/3"/>
+    </RelativeLayout>
+
+    <!--making linear layout for the question field-->
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:padding="8dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:lineSpacingExtra="6dp"
+            android:text="Question"/>
+    </LinearLayout>
+
+    <!--making the for buttons for the answers, with the bgbutton background-->
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textColor="#0066ff"
+        android:textSize="22sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="24dp"
+        android:padding="8dp"
+        android:textAllCaps="false"
+        android:background="@drawable/bgbutton"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textColor="#0066ff"
+        android:textSize="22sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:padding="8dp"
+        android:textAllCaps="false"
+        android:background="@drawable/bgbutton"/>
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textColor="#0066ff"
+        android:textSize="22sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:padding="8dp"
+        android:textAllCaps="false"
+        android:background="@drawable/bgbutton"/>
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textColor="#0066ff"
+        android:textSize="22sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:padding="8dp"
+        android:textAllCaps="false"
+        android:background="@drawable/bgbutton" />
+</LinearLayout>
